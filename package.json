@@ -1,0 +1,26 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A responsive weather web application that provides real-time weather updates using the **OpenWeather API**.  \r Built with **HTML**, **CSS**, **JavaScript**, and **Bootstrap**, this project lets users view current weather information for any city in an easy-to-use interface.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashzone/WeatherApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akashzone/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/akashzone/WeatherApp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.10"
+  }
+}
