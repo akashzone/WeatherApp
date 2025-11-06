@@ -17,7 +17,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" id="home" href="http://localhost:3000/weather/home`">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About this App</a>
@@ -59,12 +59,12 @@
           <ul class="list-unstyled mt-3 mb-4">
             <li><b>Region</b> :<span id="region"></span></li>
             <li><b>Country</b>:<span id="country"></span></li>
-            <li><b class="text-cen">TZ_ID</b>:<br><span id="tz_id"></span></li>
+            <!-- <li><b class="text-cen">TZ_ID</b>:<br><span id="tz_id"></span></li> -->
             
           </ul>
-          <button type="button" class="w-100 btn btn-lg btn-outline-primary region">
+          <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary region">
             Reg,Country &TZ_ID 
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
@@ -73,19 +73,16 @@
     <div class="col">
       <div class="card mb-4 rounded-3 shadow-sm">
         <div class="card-header py-3">
-          <h4 class="my-0 fw-normal">Localtime</h4>
+          <h4 class="my-0 fw-normal">Temperature</h4>
         </div>
         <div class="card-body">
           <h1 class="card-title pricing-card-title">
             <small class="text-body-secondary fw-light"></small>
           </h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li><b>Latitude</b> :<span id="latitude"></span></li>
-            <li><b>Longitude</b> :<span id="longitude"></span></li>
+          <ul class="list-unstyled mt-3 mb-4">          
+            <li><b>Celcius</b> :<span id="temp_c"></span></li>
+            <li><b>Farenheit</b> :<span id="temp_f"></span></li> 
           </ul>
-          <button type="button" class="w-100 btn btn-lg btn-primary lanlon">
-            Lan & Longitude
-          </button>
         </div>
       </div>
     </div>
@@ -104,117 +101,13 @@
             <li><b class="text-cen">Localtime</b>:<br><span id="localtime"></span></li>
             <li><b class="text-cen">Localtime_epoch</b>:<br><span id="local_epo"></span></li>
           </ul>
-          <button type="button" class=" localtime w-100 btn btn-lg btn-primary">
+          <!-- <button type="button" class=" localtime w-100 btn btn-lg btn-primary">
             Calculate Localtime
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Comparison Table -->
-  <h2 class="display-6 text-center mb-4">Weather of other common places</h2>
-  <div class="table-responsive">
-    <table class="table text-center">
-      <thead>
-        <tr>
-          <th style="width: 34%;"></th>
-          <th style="width: 22%;">Region</th>
-          <th style="width: 22%;">Country</th>
-          <th style="width: 22%;">Latitude</th>
-          <th style="width: 22%;">Tz_id</th>
-          <th style="width: 22%;">Localtime_epoch</th>
-          <th style="width: 22%;">Localtime</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-
-          <th scope="row" class="text-start">Delhi</th>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>
-            <svg class="bi" width="24" height="24" role="img" aria-label="Included">
-              <use xlink:href="#check"></use>
-            </svg>
-          </td>
-            
-        </tr>
-
-        <tr>
-          <th scope="row" class="text-start">Mumbai</th>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>
-            <svg class="bi" width="24" height="24" role="img" aria-label="Included">
-              <use xlink:href="#check"></use>
-            </svg>
-          </td>
-          <td>
-            <svg class="bi" width="24" height="24" role="img" aria-label="Included">
-              <use xlink:href="#check"></use>
-            </svg>
-          </td>
-        </tr>
-      </tbody>
-
-      <tbody>
-        <tr>
-          <th scope="row" class="text-start">Banglore</th>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>
-            <svg class="bi" width="24" height="24" role="img" aria-label="Included">
-              <use xlink:href="#check"></use>
-            </svg>
-          </td>
-          <td>
-            <svg class="bi" width="24" height="24" role="img" aria-label="Included">
-              <use xlink:href="#check"></use>
-            </svg>
-          </td>
-          <td>
-            <svg class="bi" width="24" height="24" role="img" aria-label="Included">
-              <use xlink:href="#check"></use>
-            </svg>
-          </td>
-        </tr>
-
-        <tr>
-          <th scope="row" class="text-start">Kolkata</th>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td></td>
-          <td>
-            <svg class="bi" width="24" height="24" role="img" aria-label="Included">
-              <use xlink:href="#check"></use>
-            </svg>
-          </td>
-          <td>
-            <svg class="bi" width="24" height="24" role="img" aria-label="Included">
-              <use xlink:href="#check"></use>
-            </svg>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  </div>           
   </div>
 </main>
     </div>

@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
+app.set("view engine", "ejs");
+app.set("views", "./views"); //
 const port = 3000;
 
 app.use(cors()); // allow requests from frontend
@@ -26,11 +28,12 @@ app.get("/weather", async (req, res) => {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-
+    console.log(result);
     console.log("✅ Sending to frontend:", result.location.name);
     // ✅ Send JSON to the frontend
-    res.json(result);
 
+    res.json(result);
+    
   } catch (error) {
     console.error("❌ Error fetching data:", error);
     res.status(500).json({ error: "Failed to fetch weather data" });
